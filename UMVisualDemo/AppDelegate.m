@@ -21,11 +21,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-        [UMVisualDebug setWssDomain:@"wss://log-api-daily.aplus.emas-poc.com"];
+        [UMVisualDebug setWssDomain:@"wss://您的域名"];
         [UMCommonLogManager setUpUMCommonLogManager];
         [UMConfigure setLogEnabled:YES];
-        [UMConfigure setCustomDomain:@"https://log-api-daily.aplus.emas-poc.com" standbyDomain:nil];
-        [UMConfigure initWithAppkey:@"19508946" channel:@"App Store"];
+        [UMConfigure setCustomDomain:@"https://您的域名" standbyDomain:nil];
+        [UMConfigure initWithAppkey:@"您的appkey" channel:@"App Store"];
         self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
         self.window.backgroundColor = [UIColor whiteColor];
         ViewController *root = [[ViewController alloc]init];
